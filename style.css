@@ -185,6 +185,7 @@ ul {
 }
 
 .footer-bottom {
+  position: absolute;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -249,5 +250,14 @@ footer {
 
     body {
         background-position: center 90%;
+    }
+
+    .list_header {
+      display: block;
+      text-align: left;
+    }
+
+    .list_links {
+      display: none;
     }
 }
