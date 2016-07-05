@@ -1,0 +1,275 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(images/sunset.jpg);
+  /*color: white;*/
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  color: white;
+  border: #123456;
+}
+
+.nav_logo {
+  padding-left: 15px;
+  padding-right: 650px;
+  font-size: 220%;
+  flex-shrink: 2;
+}
+
+.nav_item {
+  /*padding-right: 100px;*/
+  display: inline-flex;
+  justify-content: space-around;
+  /*margin: auto;*/
+}
+
+/*Pulled modified from slack.com*/
+.sign_in {
+  margin-right: 10px;
+  padding: 10px 12px;
+  line-height: 1em;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12pt;
+  margin-left: 17px;
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
+}
+
+
+
+.sign_in:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s;
+    background: #A4C639;
+}
+
+.intro-header {
+  font-size: 32pt;
+  line-height: 4.46rem;
+  font-weight: 900;
+  width: 950px;
+  text-align: center;
+  margin: 0 auto 2.65rem;
+  display: block;
+  position: relative;
+}
+
+strong {
+  font-style: italic;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#menu li {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+  /*width: 20px;*/
+}
+
+.text_box {
+  border-radius: 8px;
+  font-size: 12pt;
+  padding: 10px 12px;
+}
+
+.text_box:last-child {
+  padding-top: 40px;
+}
+
+.create-button {
+  display: inline-block;
+  font-family: Slack-Lato,sans-serif;
+  font-size: 1.249rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid #56B68B;
+  border-radius: 4px;
+  background: #56B68B;
+  color: #FFF;
+  line-height: 3.749rem;
+  padding: 0 22px;
+  /*padding-bottom: 10px;*/
+}
+
+.create-button:hover {
+  background: #123456;
+  border: 1px solid #123456;
+  /*color: #FFA;*/
+}
+
+#trans1 {
+  /*background-color: red;*/
+  margin: 0 auto;
+  height: 61px;
+  width: 108px;
+  border-radius: 5%;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+#trans1:hover {
+  background-color: blue;
+  height: 110px;
+  width: 110px;
+}
+
+
+.box_outline {
+
+}
+
+.header_text {
+  display: flex;
+  word-wrap: break-word;
+  word-spacing: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 19px 56px;
+  border-radius:10px;
+  background: rgba(13, 13, 13,.5);
+}
+
+.input_footer {
+
+  font-size: .9375rem;
+  line-height: 1.375rem;
+  display: block;
+  text-align:right;
+  padding-right: 500px;
+  padding-bottom: 100px;
+  margin: 19px 0 0;
+  width: 100%;
+}
+
+.bottom-container {
+  border-top: 1px solid white;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  color: rgb(153, 153, 153);
+}
+
+.list_header {
+  color: white;
+}
+
+.footer-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*float: right;*/
+  display: inline-block;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer-bottom {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /*float: right;*/
+  /*display: inline-block;*/
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  /*padding-bottom: 100px;*/
+  /*height: 30px;*/
+  background-color: rgba(0,0,0,0.3);
+  color: white;
+  /*padding-bottom: 100px;*/
+}
+
+.bottom_logo {
+  padding-right: 650px;
+}
+
+#bottom li {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.flex-item {
+
+}
+
+@media only screen and (max-width: 640px) {
+  .input_box {
+    flex-direction: column;
+  }
+
+  /*nav {
+    flex-direction: column;
+  }*/
+
+  .nav_logo {
+    padding-right: 0px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .intro-header {
+    word-break: break-all;
+    white-space: normal;
+  }
+
+  .flex-item {
+    display: block;
+  }
+
+    .bottom-container {
+      flex-direction: column;
+      font-size: 1.125rem;
+      font-style: normal;
+      font-weight: 400;
+      display: block;
+      content: '\E279';
+      position: absolute;
+      right: 15px;
+      line-height: 2rem;
+    }
+
+    body {
+        background-position: center 90%;
+    }
+}
