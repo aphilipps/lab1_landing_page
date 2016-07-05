@@ -10,7 +10,6 @@ nav {
   justify-content: space-between;
   padding-bottom: 15px;
   color: white;
-  border: #123456;
 }
 
 .nav_logo a{
@@ -27,8 +26,19 @@ nav {
   justify-content: space-around;
 }
 
+#menu li {
+  list-style-type: none;
+  display: inline-flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /*Pulled modified from slack.com*/
-.sign_in {
+.sign_in_btn {
   margin-right: 10px;
   padding: 10px 12px;
   line-height: 1em;
@@ -40,10 +50,11 @@ nav {
   box-shadow: inset 0 0 0 2px rgba(255,255,255,.75);
 }
 
-.sign_in:hover {
-    transform: rotate(360deg);
-    transition-duration: 1s;
-    background: #A4C639;
+/*Modified from the css workshop*/
+.sign_in_btn:hover {
+  transform: rotate(360deg);
+  transition-duration: 1s;
+  background: #A4C639;
 }
 
 .intro-header {
@@ -66,30 +77,38 @@ a {
   text-decoration: none;
 }
 
-#menu li {
-  list-style-type: none;
-  display: inline-flex;
-  padding-left: 10px;
-  padding-right: 10px;
+.header_text_box {
+  display: flex;
+  word-wrap: break-word;
+  word-spacing: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-ul {
-  list-style-type: none;
+.input_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 19px 56px;
+  border-radius:10px;
+  background: rgba(13, 13, 13,.5);
 }
 
-.text_box {
+.email_box {
   border-radius: 8px;
   font-size: 12pt;
   padding: 10px 12px;
 }
 
-.text_box:last-child {
+.email_box:last-child {
   padding-top: 40px;
 }
 
-.create-button {
+.create-btn {
   display: inline-block;
-  font-family: Slack-Lato,sans-serif;
+  font-family: sans-serif;
   font-size: 1.249rem;
   font-weight: 700;
   text-decoration: none;
@@ -101,7 +120,7 @@ ul {
   padding: 0 22px;
 }
 
-.create-button:hover {
+.create-btn:hover {
   background: #123456;
   border: 1px solid #123456;
 }
@@ -122,26 +141,7 @@ ul {
   width: 110px;
 }
 
-.header_text {
-  display: flex;
-  word-wrap: break-word;
-  word-spacing: inherit;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
-.input_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 19px 56px;
-  border-radius:10px;
-  background: rgba(13, 13, 13,.5);
-}
-
-.input_footer {
+.input_box_footer {
 
   font-size: .9375rem;
   line-height: 1.375rem;
@@ -173,28 +173,6 @@ ul {
   color: rgb(153, 153, 153);
 }
 
-.footer-container {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-.footer-bottom {
-  position: absolute;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
 footer {
   display: flex;
   justify-content: space-between;
@@ -211,10 +189,6 @@ footer {
   display: inline-flex;
   padding-left: 10px;
   padding-right: 10px;
-
-}
-
-.flex-item {
 
 }
 
@@ -236,28 +210,28 @@ footer {
     display: block;
   }
 
-    .bottom-container {
-      flex-direction: column;
-      font-size: 1.125rem;
-      font-style: normal;
-      font-weight: 400;
-      display: block;
-      content: '\E279';
-      position: absolute;
-      right: 15px;
-      line-height: 2rem;
-    }
+  .bottom-container {
+    flex-direction: column;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    content: '\E279';
+    position: absolute;
+    right: 15px;
+    line-height: 2rem;
+  }
 
-    body {
-        background-position: center 90%;
-    }
+  body {
+    background-position: center 90%;
+  }
 
-    .list_header {
-      display: block;
-      text-align: left;
-    }
+  .list_header {
+    display: block;
+    text-align: left;
+  }
 
-    .list_links {
-      display: none;
-    }
+  .list_links {
+    display: none;
+  }
 }

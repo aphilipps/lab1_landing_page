@@ -4,6 +4,9 @@
 
 I didn't feel like I had too much difficulty creating the base website for a desktop screen, but had more difficulty when trying to scale the webpage for a smaller window size. Another thing that I though was somewhat difficult was keeping my css organized because it doesn't matter what order most items appear in within style.css.
 
+### Link to site:
+https://aphilipps.github.io/lab1_landing_page/
+
 
 ## Layout Stage
 ![layout](images/layout.png)
