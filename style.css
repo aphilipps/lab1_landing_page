@@ -14,17 +14,16 @@ nav {
 
 .nav_logo a{
   padding-left: 15px;
-  padding-right: 650px;
   font-size: 220%;
   flex-shrink: 2;
   color: white;
   text-decoration: none;
 }
 
-.nav_item {
+/*.nav_item {
   display: inline-flex;
   justify-content: space-around;
-}
+}*/
 
 #menu li {
   list-style-type: none;
@@ -181,7 +180,7 @@ footer {
 }
 
 .bottom_logo {
-  padding-right: 650px;
+  /*padding-right: 650px;*/
 }
 
 #bottom li {
